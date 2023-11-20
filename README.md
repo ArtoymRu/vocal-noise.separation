@@ -19,7 +19,7 @@ Full run can be found here [master_notebook](master_nodebook.ipynb).
 For benchmarking we will use 3 different types of input videofiles:
 
 - voice + simple background (echo and some noise)
-- voice + instruments (music video)(ziped by github)
+- voice + instruments (music video)(ziped by github, can be taken here https://clck.ru/36hAAp)
 - voice + voises on the background (crowded room simulation)
 
 In terms of futher Speech-to-text the last file seems to be the most challenging, because the noise is also a clear speech.
