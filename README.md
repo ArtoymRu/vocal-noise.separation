@@ -32,8 +32,9 @@ Raw videofiles can be found here [link](data/raw/video/).
 
  At the beginning let's implement simple nearest neighbour filter [1].
 
- Transform the signal from time to frequency domain, then filter using nearest neighbors.
-   $$ D = S \cdot e^{jP}, \ \ \ S_{\text{filter}} = \min(S, \text{NN}(S))$$
+ Transform the signal from time to frequency domain, then filter using nearest neighbors. 
+
+$D = S \cdot e^{jP},\ \  S_{\text{filter}} = \min(S, \text{NN}(S))$
 
 Create masks to isolate vocals ->  Apply masks to the spectrogram -> Convert back to time domain for audio signals.
 
@@ -127,6 +128,9 @@ For example we use pre-trained deep learning model for audio source separation d
 ## 3. Futher implementation
 
 To create an effective speech-to-text pipeline, integrate audio separation tools like Spleeter, aligning with a larger workflow we need to tune all modules in the solution (separation, speech recognition, language models, ...) to reach the quality tresholds and not be over comlicated and demanding. 
+
+So, basically it was shown that both classical DSP and DL approaches can be helpful. Since, DL approach looks much more stronger potentially. And the key problems I see are: fine tuning to particular noise type and computational requirements (may be problem for real-time product). Here as I believe hybrid model (DSP+DL) and some approaches like transfer learning may be suitable.
+
 
 ## Structure
 
