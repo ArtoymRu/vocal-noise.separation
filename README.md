@@ -143,6 +143,7 @@ So, basically it was shown that both classical DSP and DL approaches can be help
     ├── master_notebook             # Research run
     ├── models                      # Trained models
     ├── report                      # Plots and text report
+    ├── standalone_model            # MossFormer2
     │
     └──src
         ├── cocktail.py             # Realisation of ICA
